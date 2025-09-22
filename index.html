@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Digital Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1><span id="typing-header"></span></h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="dark-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="animate-reveal about-section">
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic"/>
+    <h2>About Me</h2>
+    <p>Passionate web developer skilled in frontend technologies, UI/UX design, and modern web animations.</p>
+  </section>
+
+  <section id="skills" class="animate-reveal">
+    <h2>Skills</h2>
+    <div class="skill-bar">
+      <img src="html.png" alt="HTML5 icon" class="skill-icon"/>
+      <span>HTML5</span>
+      <div class="bar"><div class="progress" data-value="95"></div></div>
+    </div>
+    <div class="skill-bar">
+      <img src="css.png" alt="CSS3 icon" class="skill-icon"/>
+      <span>CSS3</span>
+      <div class="bar"><div class="progress" data-value="90"></div></div>
+    </div>
+    <div class="skill-bar">
+      <img src="javascript.png" alt="JavaScript icon" class="skill-icon"/>
+      <span>JavaScript</span>
+      <div class="bar"><div class="progress" data-value="88"></div></div>
+    </div>
+    <div class="skill-bar">
+      <img src="react.png" alt="React icon" class="skill-icon"/>
+      <span>React</span>
+      <div class="bar"><div class="progress" data-value="80"></div></div>
+    </div>
+    <div class="skill-bar">
+      <img src="resp.png" alt="React icon" class="skill-icon"/>
+      <span>RWD</span>
+      <div class="bar"><div class="progress" data-value="80"></div></div>
+    </div>
+  </section>
+
+
+  <section id="projects" class="animate-reveal">
+    <h2>Projects</h2>
+    <article class="project" data-title="Interactive Portfolio Website" data-desc="A visually stunning portfolio with GSAP animations, skill bars, dark mode, and more." data-img="portfolio-screenshot.png">
+      <h3>Interactive Portfolio Website</h3>
+      <p>A dynamic portfolio showcasing my skills and project experience.</p>
+    </article>
+    <article class="project" data-title="Smart Study Planner" data-desc="An interactive planner tool for students, offering reminders, visual timelines, and local storage support." data-img="planner-screenshot.png">
+      <h3>Smart Study Planner</h3>
+      <p>Helps manage academic tasks and timelines for effective productivity.</p>
+    </article>
+    <article class="project" data-title="Weather Dashboard" data-desc="Real-time dashboard fetching weather data using APIs." data-img="weather-screenshot.png">
+      <h3>Weather Dashboard</h3>
+      <p>Displays current weather and forecast using public APIs.</p>
+    </article>
+    <article class="project" data-title="Personal Blog" data-desc="Modern, responsive blog for writers." data-img="blog-screenshot.png">
+      <h3>Personal Blog</h3>
+      <p>Platform focused on ease-of-use and accessibility.</p>
+    </article>
+  </section>
+
+  <section id="contact" class="animate-reveal">
+    <h2>Contact</h2>
+    <p>Email: chinthalaprasanna1606@gmail.com</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Chinthala Lakshmi Prasanna</p>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="modal-close" class="close">&times;</span>
+      <h3 id="modal-title"></h3>
+      <img id="modal-image" src="" alt="Project Screenshot" />
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
